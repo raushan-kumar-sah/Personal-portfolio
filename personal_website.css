@@ -1,0 +1,781 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+/*....................first part...............*/
+#first{
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, #0b8793, #360033);
+}
+#first .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+#first .head nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+#first .head a.img{
+    width: 100px;
+    height: 60px;
+    display: inline-block;
+    overflow: hidden;
+}
+#first .head a img{
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 0, 221);
+    font-size: 20px;
+    height: 60px;
+}
+#first .head nav ul li a{
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all linear 0.2s;
+    color: white;
+    font-family: sans-serif;
+}
+#first .head nav ul li a:hover{
+    color: cyan;
+    border-radius: 5px;
+    box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+#first .head nav ul li a.active{
+    color: cyan;
+   border-radius: 5px;
+   box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+/*.............................Second part............... */
+#second{
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#second::before{
+    content: "";
+    background-image: url(Logopit_1722349383495.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.35;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+#second .bio{
+    position: relative;
+}
+#second .bio h5 span.hello{
+    margin-left: 30px;
+    color: #4a08ff;
+    font-size: 30px;
+    font-family: Georgia;
+}
+#second .bio h5 span.name{
+    margin-left: 50px;
+    font-size: 80px;
+    font-family: 'poppins',sans-serif;
+    transition: all ease 0.2s;
+}
+#second .bio h5 span.name:hover{
+    color: #0b8793;
+    cursor: pointer;
+}
+#second .bio h5 span.front{
+    margin-left: 50px;
+    color: #008466;
+    font-size: 25px;
+    font-family: Tahoma;
+}
+#second .bio h5 span.count{
+    margin-left: 50px;
+    color: #b700ff;
+    font-size: 20px;
+    font-family: fantasy;
+}
+#second .bio a{
+    padding: 10px 15px;
+    border: 2px solid #1118e1;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 50px;
+    color: black;
+    text-decoration: none;
+    font-family: Arial;
+    text-align: center;
+    font-size: 16px;
+    transition: all linear 0.3s;
+}
+#second .bio a:hover{
+    background-color: #F48121;
+    font-size: 18px;
+    border: 2px solid transparent;
+    color: white;
+}
+#second .bio a.facebook{
+    padding: 10px;
+    border: 2px solid #000000;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: Arial;
+    text-align: center;
+    font-size: 18px;
+    transition: all linear 0.3s;
+}
+#second .bio a.facebook:hover{
+    color: white;
+    background-color: #0A82EA;
+    border: 2px solid transparent;
+    font-size: 20px;
+    transform: rotateY(360deg);
+}
+#second .bio a.instagram{
+    padding: 10px;
+    border: 2px solid #000000;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: Arial;
+    text-align: center;
+    font-size: 18px;
+    transition: all linear 0.3s;
+}
+#second .bio a.instagram:hover{
+    color: white;
+    background: linear-gradient(45deg,    #405de6,#5b51db,#b33ab4,#c135b4,#e1306c,#fd1f1f);
+    border: 2px solid transparent;
+    font-size: 20px;
+    transform: rotateX(360deg);
+}
+#second .bio a.twiter{
+    padding: 10px;
+    border: 2px solid #000000;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: Arial;
+    text-align: center;
+    font-size: 18px;
+    transition: all linear 0.3s;
+}
+#second .bio a.twiter:hover{
+    color: white;
+    background-color: #209BEB;
+    border: 2px solid transparent;
+    font-size: 20px;
+    transform: rotateZ(360deg);
+}
+
+
+/*...................Third part...........................*/
+#third{
+    background-color: #fff;
+    padding: 100px 0px;
+}
+#third .about{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    background-color: #ddd;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#third .about .about1{
+    display: flex;
+}
+#third .about h4{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+#third .about p.hi{
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial;
+    margin-bottom: 20px;
+}
+#third .about .about1 .img{
+    width: 35%;
+    padding: 20px;
+}
+#third .about .about1 .img img{
+    width: 100%;
+    border: 3px solid rgb(144, 24, 44);
+    border-radius: 20px;
+    transition: all linear 0.3s;
+}
+#third .about .about1 .img:hover img{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#third .about .about1 .detail{
+    width: 65%;
+    padding: 20px;
+}
+#third .about .about1 .detail h5{
+    font-size: 25px;
+    font-family: Arial;
+    margin-bottom: 5px;
+}
+#third .about .about1 .detail p.p2{
+    font-family: Arial;
+    margin-left: 20px;
+}
+#third .about .about1 .detail p.p3{
+    font-family: Arial;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#third .about .about1 .detail .detail2{
+    display: flex;
+    margin-top: 10px;
+}
+#third .about .about1 .detail .detail2 .d1{
+    padding: 10px;
+}
+#third .about .about1 .detail .detail2 .d1 p{
+    font-size: 18px;
+    line-height: 2;
+}
+/*......................sixth part.............*/
+#sixth{
+    padding: 100px 0px;
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );    
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+#sixth h4{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+#sixth p{
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial;
+    margin-bottom: 20px;
+}
+#sixth .skill{
+    display: flex;
+    justify-content: center;
+}
+#sixth .skill .s1{
+    border-right: 3px solid black;
+    padding: 10px;
+    font-family: Arial;
+    width: 50%;
+}
+#sixth .skill .s1 .html,
+#sixth .skill .s2 .html{
+    padding: 20px 0px;
+}
+#sixth .skill .s1 .html span.html2{
+    float: left;
+    width: 80%;
+    background: linear-gradient(to bottom right, red, yellow);
+    color: white;
+    padding: 5px;
+}
+#sixth .skill .s1 .html span.html3{
+    float: right;
+    width: 20%;
+    background-color: transparent;
+    color: black;
+    padding: 5px;
+}
+#sixth .skill .s1 .html span.js2{
+    float: left;
+    width: 50%;
+    background: linear-gradient(to bottom right, red, yellow);
+    color: white;
+    padding: 5px;
+}
+#sixth .skill .s1 .html span.js3{
+    float: right;
+    width: 50%;
+    background-color: transparent;
+    color: black;
+    padding: 5px;
+}
+#sixth .skill .s1 .html span.react2{
+    float: left;
+    width: 30%;
+    background: linear-gradient(to bottom right, red, yellow);
+    color: white;
+    padding: 5px;
+}
+#sixth .skill .s1 .html span.react3{
+    float: right;
+    width: 70%;
+    background-color: transparent;
+    color: black;
+    padding: 5px;
+}
+#sixth .skill .s2{
+    padding: 10px 0px 10px 30px;
+    width: 50%;
+    font-family: Arial;
+}
+#sixth .skill .s2 .html span.css2{
+    float: left;
+    width: 60%;
+    background: linear-gradient(to bottom right, red, yellow);
+    color: white;
+    padding: 5px;
+}
+#sixth .skill .s2 .html span.css3{
+    float: right;
+    width: 40%;
+    background-color: transparent;
+    color: black;
+    padding: 5px;
+}
+#sixth .skill .s2 .html span.cc2{
+    float: left;
+    width: 75%;
+    background: linear-gradient(to bottom right, red, yellow);
+    color: white;
+    padding: 5px;
+}
+#sixth .skill .s2 .html span.cc3{
+    float: right;
+    width: 25%;
+    background-color: transparent;
+    color: black;
+    padding: 5px;
+}
+/*...................seventh part .............*/
+#seventh{
+    padding: 100px 0px;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+}
+#seventh h5{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+#seventh .resume{
+    display: flex;
+    justify-content: center;
+}
+#seventh .resume img{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 30px;
+    border: 3px solid #E5837E;
+    height: 600px;
+    transition: all linear 1s;
+}
+#seventh .resume img:hover{
+    transform: scale(1.1);
+
+}
+/*....................fifth part...............*/
+#fifth{
+    padding: 100px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#fifth h4{
+    text-align: center;
+    font-family: 'poppins',sans-serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+#fifth .portfolio ul.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+#fifth .portfolio .menu li a{
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+    border: 2px solid #3E484D;
+    color: black;
+    border-radius: 7px;
+    display: inline-block;
+    font-size: 18px;
+    transition: all linear 0.2s;
+}
+#fifth .portfolio .menu li a:hover{
+    background-color: #0B772F;
+    color: white;
+    border: 2px solid transparent;
+    transform: translateY(-5px);
+}
+#fifth .portfolio .common{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    display: none;
+}
+#fifth .portfolio .common .web{
+    padding: 30px;
+    width: 30%;
+}
+#fifth .portfolio .common .web .webhouse,
+#fifth .portfolio .common .web .cotiviti,
+#fifth .portfolio .common .web .onlinesaathi,
+#fifth .portfolio .common .web .plannepal,
+#fifth .portfolio .common .web .ngo,
+#fifth .portfolio .common .web .prospective,
+#fifth .portfolio .common .web .airbnb,
+#fifth .portfolio .common .web .airtravel,
+#fifth .portfolio .common .web .travel{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+    transition: all linear 15s;
+}
+#fifth .portfolio .common .web .webhouse{
+    border: 8px solid #DAC5A9;
+}
+#fifth .portfolio .common .web .cotiviti{
+    border: 8px solid #9024DD;
+}
+#fifth .portfolio .common .web .onlinesaathi{
+    border: 8px solid #E0807B;
+}
+#fifth .portfolio .common .web .plannepal{
+    border: 8px solid #7DCADC;
+}
+#fifth .portfolio .common .web .ngo{
+    border: 8px solid #B2ABCA;
+}
+#fifth .portfolio .common .web .prospective{
+    border: 8px solid #8D23D8;
+}
+#fifth .portfolio .common .web .airbnb{
+    border: 8px solid #a8c345;
+}
+#fifth .portfolio .common .web .airtravel{
+    border: 8px solid #7BC7D9;
+}
+#fifth .portfolio .common .web .travel{
+    border: 8px solid #DAC5A9;
+}
+#fifth .portfolio .common .web h5{
+    text-align: center;
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #8C9093;
+}
+#fifth .portfolio .common .web p{
+    text-align: center;
+    color:#8C9093;
+    font-family: Arial;
+    font-weight: 600;
+}
+#fifth .portfolio .menu li a.active{
+    background: linear-gradient(to bottom , red, #ED7602);
+    color: white;
+    border: 2px solid transparent;
+    font-size: 20px;
+}
+#fifth .portfolio .common.visible{
+    display: flex;
+}
+#fifth .portfolio .common .web .webhouse{
+    background-image: url(webhousenepal.png);
+}
+#fifth .portfolio .common .web .cotiviti{
+    background-image: url(Cotiviti.png);
+}
+#fifth .portfolio .common .web .onlinesaathi{
+    background-image: url(Onlinesaathi.png);
+}
+#fifth .portfolio .common .web .plannepal{
+    background-image: url(plannepal-com.png);
+}
+#fifth .portfolio .common .web .airtravel{
+    background-image: url(Travel-site.png);
+}
+#fifth .portfolio .common .web .ngo{
+    background-image: url(NGO-Federation-of-nepal.png);
+}
+#fifth .portfolio .common .web .prospective{
+    background-image: url(Prospective-care.png);
+}
+#fifth .portfolio .common .web .airbnb{
+    background-image: url(airbnb.png);
+}
+#fifth .portfolio .common .web .travel{
+    background-image: url(My-travel-journal.png);
+}
+
+
+#fifth .portfolio .common .web .webhouse,
+#fifth .portfolio .common .web .cotiviti,
+#fifth .portfolio .common .web .onlinesaathi,
+#fifth .portfolio .common .web .plannepal,
+#fifth .portfolio .common .web .ngo,
+#fifth .portfolio .common .web .airtravel,
+#fifth .portfolio .common .web .prospective,
+#fifth .portfolio .common .web .airbnb,
+#fifth .portfolio .common .web .travel{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all linear 5s;
+}
+#fifth .portfolio .common .web .travel{
+    background-position: left;
+}
+#fifth .portfolio .common .web .travel:hover{
+    background-position: right;
+}
+
+#fifth .portfolio .common .web .webhouse:hover,
+#fifth .portfolio .common .web .cotiviti:hover,
+#fifth .portfolio .common .web .onlinesaathi:hover,
+#fifth .portfolio .common .web .plannepal:hover,
+#fifth .portfolio .common .web .ngo:hover,
+#fifth .portfolio .common .web .airtravel:hover,
+#fifth .portfolio .common .web .prospective:hover,
+#fifth .portfolio .common .web .airbnb:hover,
+#fifth .portfolio .common .web .travel:hover{
+    background-position: bottom;
+    cursor: pointer;
+}
+
+
+/*....................fourth part.............*/
+#fourth{
+    padding: 50px 0px;
+    background-color: #ddd;
+}
+#fourth .contact{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+    padding: 30px 0px;
+    border-radius: 30px;
+}
+#fourth .contact h5{
+    margin-bottom: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+#fourth .contact .num{
+    display: flex;
+    justify-content: center;
+}
+#fourth .contact .num .location{
+    width: 40%;
+    padding: 20px;
+}
+#fourth .contact .num .location .map{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#fourth .contact .num .location .map .f1{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-right: 10px;
+    background-color: rgb(60, 0, 255);
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+#fourth .contact .num .location .map .f1 i{
+    font-size: 20px;
+}
+#fourth .contact .num .location .map .f1:hover{
+    background-color: #ff3700;
+    border: 1px solid transparent;
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+#fourth .contact .num .location .map .f2{
+    padding: 10px;
+}
+#fourth .contact .num .form{
+    width: 50%;
+    padding: 20px;
+}
+#fourth .contact .num .form #name,
+#fourth .contact .num .form #email{
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#fourth .contact .num .form #message{
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+#fourth .contact .num .form .send{
+    padding: 10px 15px;
+    border: 2px solid red;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+    justify-content: center;
+}
+#fourth .contact .num .form .send:hover{
+    background-color: rgb(97, 68, 225);
+    border: 2px solid transparent;
+    color: white;
+    font-size: 15px;
+    font-family: Arial;
+    cursor: pointer;
+}
+/*..........foooter1...........*/
+
+/* #foot{
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);background-image: linear-gradient(to right, #00b09b, #96c93d);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+} */
+#foot .last{
+    display: flex;
+    padding: 20px;
+    border-radius: 200px 200px 0px 0px;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);background-image: linear-gradient(to right, #00b09b, #96c93d);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#foot .last .logo{
+    width: 30%;
+    padding: 15px 20px 15px 0px;
+    border-right: 3px dashed black;
+}
+#foot .last .logo img{
+    width: 25%;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 0, 221);
+    font-size: 20px;
+    height: 60px;
+    float: right;
+}
+#foot .last .follow{
+    padding: 20px;
+}
+#foot .last .follow h4{
+    font-size: 18px;
+    font-family: Arial;
+}
+#foot .last .follow h4:hover{
+    color: #fff;
+    cursor: pointer;
+}
+#foot .last .follow p{
+    font-size: 15px;
+    font-family: Arial;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#foot .last .follow .icon{
+    display: flex;
+}
+#foot .last .follow .icon h5{
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: #2b00ff;
+}
+#foot .last .follow .icon a{
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid black;
+    margin: 10px;
+    transition: all linear 0.3s;
+}
+#foot .last .follow .icon a i{
+    color: black;
+    transition: all linear 0.3s;
+    font-size: 20px;
+}
+#foot .last .follow .icon a.facebook:hover{
+    background-color: #126CFF;
+    border: 1px solid transparent;
+    transform: translateY(-5px);
+}
+#foot .last .follow .icon a.instagram:hover{
+    background: linear-gradient(45deg,    #405de6,#5b51db,#b33ab4,#c135b4,#e1306c,#fd1f1f);
+    border: 1px solid transparent;
+    transform: translateY(-5px);
+}
+#foot .last .follow .icon a.twiter:hover{
+    background-color: #2AA3F1;
+    border: 1px solid transparent;
+    transform: translateY(-5px);
+}
+#foot .last .follow .icon a.youtube:hover{
+    background-color: #FF1512;
+    border: 1px solid transparent;
+    transform: translateY(-5px);
+}
+#foot .last .follow .icon a.linkedin:hover{
+    background-color: #1968C6;
+    border: 1px solid transparent;
+    transform: translateY(-5px);
+}
+#foot .last .follow .icon a:hover i{
+    transform: rotateY(360deg);
+    color: white;
+}
+
+/*.............footer2.............*/
+#foot1{
+    background-color: #01ccff;
+}
+#foot1 .foot2{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    line-height: 1.7;
+    font-family: Arial;
+}
+#foot1 .foot2 p a{
+    text-decoration: none;
+}
+#foot1 .foot2 p a:hover{
+    color: rgb(255, 0, 0);
+}
+
+html{
+    scroll-behavior: smooth;
+}
